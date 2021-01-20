@@ -1,0 +1,16 @@
+h1 {
+    font-family: sans-serif;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-variant:small-caps;
+    font-style: oblique;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 130%;
+    font-size: 50%;
+    font-weight:  1000;
+}

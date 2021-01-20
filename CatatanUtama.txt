@@ -1,0 +1,66 @@
+Apa itu CSS?
+Cascading Style Sheet
+Mekanisme sederhana yang mengatur gaya / style pada sebuah web.
+
+1.  Aturan yang digunkana untuk menampilkan elemnen / tag HTML.
+2.  Dibuat terpisah dengan HTML.
+3.  1 CSS dapat digunakan untuk banyak halaman HTML.
+4.  1 Halaman HTML dapat terlihat berbeda jika menggunakan CSS yang berbeda.
+
+CSS anatomi
+selector { property: value; }
+cth
+    1.h1 { color: blue;}
+      membuat semua h1 berwarna biru
+    2. h1 {
+        font-family: "Montserrat";
+        text-align: center;
+        font-size: 30px
+        color: blue
+      }
+
+Apa itu selector?
+1. Digunakan untuk memilih dan memanipulasi elemen spesifik pada HTML.
+2. Elemen HTML dipilih berdasarkan tag, id, class bahkan pola / pattern.
+3. Semakin kompleks struktur HTML, selector juga bisa semakin kompleks / spesifik
+
+Referensi untuk property dan value
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+https://css-tricks.com/almanac
+
+Cara menghubungkan CSS dan HTML
+1. menggunakan embed pada head HTML
+    <style></style>
+2. menggunkana inline
+    <p style = "color: lightblue;"> ... </p>
+    Gunkan Inline CSS ketika kamu tau apa yang kamu lakukan
+3. External
+    <link rel="stylesheet" href="style.css">
+
+Property untuk Font
+1. font-family
+    mengatur jenis font yang akan digunkan
+    font-family: a, b, c;
+    a, b = nama font
+    c = generic family
+2. font-size
+    mengatur ukuran font
+3. font-weight
+    mengatur ketebalan font
+4. font-variant
+    mengubah font menjadi small caps
+5. font-style
+    mengubah font menjadi bercetak miring
+6. line-height
+    mengatur spasi antar baris
+atau semua itu digabung menjadi
+cth 
+body {
+    font: a b c d/e f;
+}
+a = value of font-style
+b = value of font-variant
+c = value of font-weight
+d = value of font-size
+e = value of line-height
+f = value of font-family
