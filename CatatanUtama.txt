@@ -7,7 +7,7 @@ Mekanisme sederhana yang mengatur gaya / style pada sebuah web.
 3.  1 CSS dapat digunakan untuk banyak halaman HTML.
 4.  1 Halaman HTML dapat terlihat berbeda jika menggunakan CSS yang berbeda.
 
-CSS anatomi
+CSS anatomi (Coding1)
 selector { property: value; }
 cth
     1.h1 { color: blue;}
@@ -37,30 +37,88 @@ Cara menghubungkan CSS dan HTML
 3. External
     <link rel="stylesheet" href="style.css">
 
-Property untuk Font
-1. font-family
-    mengatur jenis font yang akan digunkan
-    font-family: a, b, c;
-    a, b = nama font
-    c = generic family
-2. font-size
-    mengatur ukuran font
-3. font-weight
-    mengatur ketebalan font
-4. font-variant
-    mengubah font menjadi small caps
-5. font-style
-    mengubah font menjadi bercetak miring
-6. line-height
-    mengatur spasi antar baris
-atau semua itu digabung menjadi
-cth 
-body {
-    font: a b c d/e f;
-}
-a = value of font-style
-b = value of font-variant
-c = value of font-weight
-d = value of font-size
-e = value of line-height
-f = value of font-family
+Property untuk Font (Coding2)
+    1. font-family
+        mengatur jenis font yang akan digunkan
+        font-family: a, b, c;
+        a, b = nama font
+        c = generic family
+    2. font-size
+        mengatur ukuran font
+    3. font-weight
+        mengatur ketebalan font
+    4. font-variant
+        mengubah font menjadi small caps
+    5. font-style
+        mengubah font menjadi bercetak miring
+    6. line-height
+        mengatur spasi antar baris
+    atau semua itu digabung menjadi
+    cth 
+    body {
+        font: a b c d/e f;
+    }
+    a = value of font-style
+    b = value of font-variant
+    c = value of font-weight
+    d = value of font-size
+    e = value of line-height
+    f = value of font-family
+
+Property untuk Text (Coding3)
+    1. color
+        dapat menggunakna nama (dalam bahasa inggris), bisa menggunakan hexadecimal (#ff0000), bisa menggunakan rgb (rgb(255,0,0))
+    2. text-align
+        center, justify, right, left(default)
+    3. text-indent
+        untuk indentasi
+    4. text-decoration
+        underline, overline,  line-through, none
+    5. text-transform
+        lowercase, uppercase, capitalize, none
+    6. letter=spacing
+    7. word-spacing
+
+Property untuk Background (Coding4)
+    referensi untuk gambar berpola: https://subtlepatterns.com
+    1. background-color
+    2. background-image
+    3. background-position
+        top, center, bottom. left, center, right
+    4. background-repeat
+    cth 
+    body {
+        background: url() a b c
+    }
+    a = value of background-color
+    b = value of background-repeat
+    c = value of background-postition
+
+CSS Selector (Coding5)
+    selector dapat berupa:
+    elemen HTML, id, class, complex selector
+    selector bisa 2 elemen
+    cth
+    h1, h2 {
+        ....
+    }
+    artinya ubah h1 dan h2 untuk styling ...
+    untuk merubah styling yang menggunakan id, gunakan "#" pada awal nama id. Sementara untuk class gunakan "." pada awal nama class
+
+Pseudo Class (Coding6)
+    kelas semu yang dimiliki oleh sebuah elemen HTML, yang membuat kita dapat mendefinisikan style pada "keadaan tertentu" dari elemen tersebut.
+    cth.
+    yang berhubungan dengan link
+    :link
+    :hover
+    :active
+    :visited
+
+    Yang berhubungan dengan posisi elemen
+    :first-child
+    :last-child
+    :nth-child(n)
+
+    Yang berhubungan dengan tipe
+    :first-of-type
+    :last-of-type

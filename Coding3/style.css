@@ -1,0 +1,17 @@
+h1 {
+    font-size: 20px;
+    color: rgb(255, 000, 000);
+    text-align: justify;
+}
+
+h2 {
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h3 {
+    color: #FF00FF;
+    text-align: justify;
+    text-indent: 10%;
+}

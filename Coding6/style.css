@@ -1,0 +1,63 @@
+.hello {
+    text-decoration: none;
+}
+.hello:link{
+    color: orange;
+}
+/* merubah semua yang berkelas hello dan berjenis link menjadi warna orange */
+
+.hello:visited{
+    color: orange
+}
+/* merubah semua yang berkelas hello, ketika sebuah link sudah pernah dikunjungi merubah menjadi warna orange (HATI-HATI URUTAN MEMPENGARUHI VISITED HARUS DIATAS HOVER) */
+
+.hello:hover{
+    color:green
+}
+/* merubah semua yang berkelas hello, ketika di hover merubah menjadi warna merah */
+
+.hello:active{
+    color:blue
+}
+
+li:first-child a {
+    color: blue;
+}
+/* Cari a, yang di dalam li, yang merupakan anak pertama (disini anak pertama li adalah line 10 pada "html.html", dimana merupakan anak pertama dari parent ul line 9) */
+
+li:last-child a {
+    color: orange;
+}
+
+li:nth-child(3) a {
+    color: green;
+}
+/* ^^ untuk anak ke 3 */
+
+li:nth-child(3n+1) a {
+    color: red;
+}
+/* ^^ untuk anak ke urutan 3n+1 */
+
+li:nth-child(even) a {
+    color: violet;
+}
+/* ^^ untuk anak yang genap */
+
+p:first-of-type {
+    color: grey;
+}
+/* untuk tipe p yang pertama, buat warna menjadi grey */
+
+p:first-of-type:hover{
+    color:green
+}
+
+p:last-of-type {
+    color: blue;
+}
+/* untuk tipe p yang terakhir, buat warna menjadi grey */
+
+p:last-of-type:hover{
+    color:lightskyblue
+}
